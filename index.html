@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="favicon.ico" />
+    <title>Ngân Pickery</title>
+</head>
+<body>
+    <main>
+    <button class="menubutton" id="openMenu">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </button>
+    <nav class="menu">
+        <ul>
+            <li><a href="#introduction"><h4>Introduction</h4></a></li>
+            <li><a href="#myskills"><h4>What I do</h4></a></li>
+            <li><a href="#showcase"><h4>My projects</h4></a></li>
+            <li><a href="#contactform"><h4>Drop me a message</h4></a></li>
+        </ul>
+    </nav>
+        
+        <section id="introduction">
+            <div class="carroussel">
+                <ul class="carrousselcontent">
+                        <li>
+                            <img src="HighresScreenshot1.png" alt="titleimage">
+                            <!--<h1 class="myname">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="650" height="350" viewBox="0 0 700 350">
+                                    <text x="0" y="150">Ngân</text>
+                                    <text x="0" y="300">Pickery</text>
+                                </svg>
+                            </h1>-->
+                        </li>
+                        <li>
+                            <img src="HighresScreenshot2.png" alt="contactimage">
+                            <!--<h1 class="contactme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="650" height="350" viewBox="0 0 700 350">
+                                    <text x="0" y="150">Contact</text>
+                                    <text x="0" y="300">Me</text>
+                                </svg>
+                            </h1>
+                            <div class="contactlinks">
+                                    <a href="mailto:ngan.pickery@gmail.com">
+                                        <img src="emailIcon.png" alt="email" />
+                                    </a>
+                                    <a href="www.linkedin.com/in/ngân-pickery-a6818b87">
+                                        <img src="linkedinIcon.png" alt="linkedin" />
+                                    </a>
+                                    <a href="https://www.artstation.com/phamthuyngan">      
+                                        <img src="artstationIcon.png" alt="artstation" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="itchioIcon.png" alt="itchio" />
+                                    </a>
+                            </div>-->
+                            <div class="contactlinks">
+                                <a href="mailto:ngan.pickery@gmail.com"> 
+                                </a>
+                                <a href="http://www.linkedin.com/in/ngân-pickery-a6818b87">
+                                </a>
+                                <a href="https://www.artstation.com/phamthuyngan"> 
+                                </a>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="HighresScreenshot3.png" alt="contactimage">
+                            <!--<h1 class="aboutme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="650" height="350" viewBox="0 0 700 350">
+                                    <text x="0" y="150">About</text>
+                                    <text x="0" y="300">Me</text>
+                                </svg>
+                            </h1>
+                            <h4 id="resume">
+                                Hello world, my name is Ngân and I work as Technical
+                                Artist. With a background composed by 3D animation and
+                                3D environment for games, I discovered that what really
+                                drives me is technical challenges. Some may say I’m crazy
+                                but I actually enjoy spending time on rigging and UV mapping.
+                                My favourite games are Minesweeper, Dishonored and
+                                Ori And The Blind Forest. I’m a big fan of martial arts and a
+                                proud owner of the cutest bunny that you’ll ever see.
+                            </h4>-->
+                        </li>
+                    </ul>
+                <!--<div class="greybox"></div>-->
+                <div class="arrows">
+                    <button onclick="show(-1)" class="previousone">
+                        <img src="Arrow.png" alt="arrow" />
+                    </button>
+                    <button onclick="show(+1)" class="nextone">
+                        <img src="Arrow.png" alt="arrow" />
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="myskills">
+            <div>
+                <h2>
+                    What I do
+                </h2>
+            </div>
+            <div>
+                <ul class="skills">
+                    <li>
+                        <h3>
+                            3D Art
+                        </h3>
+                        <h4>
+                            3D modeling, texturing. Check out <a href="http://www.artstation.com/phamthuyngan">my portfolio</a> to have a glance at my other projects.
+                        </h4>
+                    </li>
+                    <li>
+                        <h3>
+                            3D Technical Art
+                        </h3>
+                        <h4>
+                            Rigging for games (Maya), shaders (Unity, Unreal) and way more.
+                        </h4>
+                    </li>
+                    <li>
+                        <h3>
+                            Programming
+                        </h3>
+                        <h4>
+                            C#, Python, Unity shaders and HTML/CSS. Check out my games on <a href="itchiopage">itch.io</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="showcase">
+            <h2>
+                My projects
+            </h2>
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="BirdHouse" src="http://www.youtube.com/embed/Y1TOxgsKjcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="Diorama" src="http://sketchfab.com/models/d4712787eb1f43f7bc6cdeab2be5b8d8/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        </section>
+        <section id="contactform">
+                <div class="form">
+                    <h2>
+                        <a href="mailto:ngan.pickery@gmail.com">Drop me a message!</a>
+                    </h2>
+
+                    <form action="contact.php"
+                          method="POST"
+                          name="EmailForm">
+
+                        <!--<label>Name:</label> <br>-->
+                        <input name="sender" value="" placeholder="Your name (mandatory)" type="text" />
+
+                        <!--<label>Email address:</label> <br />-->
+                        <input name="senderemail" value="" placeholder="E-mail (mandatory)" type="email" />
+
+                        <!--<label>Telephone number:</label> <br />-->
+                        <input name="sendertel" value="" placeholder="Telephone number (not mandatory)" type="tel" />
+
+                        <!--<label>Message:</label> <br />-->
+                        <textarea name="message" placeholder="Type your message here ..."></textarea>
+
+                        <button class="buttonsubmit" type="submit" value="Submit">
+                            <h4>
+                                Submit
+                            </h4>
+                        </button>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

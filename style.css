@@ -1,0 +1,401 @@
+﻿@font-face {
+    font-family: 'BaronNeueBold';
+    src: url('BaronNeueBold.eot') format('eot'), 
+         url('BaronNeueBold.otf') format('truetype'), 
+         url('BaronNeueBold.woff') format('woff'), 
+         url('BaronNeueBold.woff2') format('woff2'), 
+         url('BaronNeueBold.svg#BaronNeueBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin : 0%;
+    padding : 0%;
+}
+
+body 
+{
+    background-color: rgb(20, 20, 20);
+    padding : 0%;
+}
+
+main 
+{
+    padding: 0%;
+}
+
+/*h1 {
+    z-index: 3;
+    font-family: 'BaronNeueBold', 'Segoe UI', sans-serif;
+    font-size: 7vw;
+}*/
+
+h2, h3, h4
+{
+    z-index : 3;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    color: rgb(230, 230, 230);
+    text-align : justify;
+}
+
+a 
+{
+    color: rgb(37, 149, 191);
+    text-decoration: none;
+    z-index : 3;
+}
+h2 
+{
+    text-align: center;
+    font-size: 36px;
+    margin : 5%;
+}
+
+h3 
+{
+    text-align: center;
+    font-size: 24px;
+    padding : 10px 10px 10px 10px;
+}
+
+h4 {
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    color: rgb(230, 230, 230);
+}
+
+li
+{
+    list-style : none;
+}
+
+svg 
+{
+    display: block;
+}
+
+text {
+    fill: rgba(77, 77, 77, 0.80);
+    stroke: rgb(230, 230, 230);
+    stroke-width: 0.2vw;
+    text-transform: capitalize;
+}
+
+.skills
+{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    flex-wrap : wrap;
+    align-items: baseline;
+    background-color : rgba(0,0,0,0);
+}
+
+.skills>li 
+{
+    display : block;
+    border : 3px solid rgb(230, 230, 230);
+    border-radius : 15px;
+    /*background-color : white;*/
+    width : 300px;
+    min-height : 250px;
+    padding : 20px;
+    margin : 20px;
+}
+
+.carroussel {
+    display: block;
+    width: 100vw;
+    height: 49vw;
+    max-height: 940px;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*.greybox {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: inline;
+    z-index: 2;
+    background-color: rgba(13,13,13,0.5);
+    width: 100vw;
+    height: 54vw;
+    max-height: 940px;
+}*/
+
+.carrousselcontent
+{
+    position : absolute;
+    top : 0%;
+    left : 0%;
+    display : flex;
+    align-items : flex-start;
+    width : 100%;
+    height : 100%;
+    overflow : hidden;
+}
+
+.carrousselcontent > li
+    {
+        display: block;
+        min-width: 100vw;
+        width: 100vw;
+        height: auto;
+        margin : 0px;
+        padding : 0px;
+    }
+.carrousselcontent > li > img
+{
+        width: 100%;
+        max-height: 940px;
+}
+
+/*.myname
+{
+    z-index : 3;
+    position : relative;
+    top: 30vw;
+    left: 7vw;
+
+}
+
+.contactme, .aboutme {
+    z-index: 3;
+    position: relative;
+    top: -115%;
+    left: 7%;
+}
+
+#resume 
+{
+    z-index: 3;
+    position: relative;
+    top: -115%;
+    left: 7%;
+    width: 600px;
+    height: auto;
+    text-align: justify;
+}*/
+
+.contactlinks{
+    display : flex;
+    flex-direction : column;
+    width : auto;
+    height : auto;
+    position : relative;
+    top : -29.5vw;
+    left : 14.6vw;
+}
+
+.contactlinks > a
+{
+    z-index : 3;
+    width : 4.4vw;
+    height : 4.4vw;
+    margin-top : 0.18vw;    
+    margin-bottom : 0.18vw;
+    /*background-color : green;*/
+}
+
+.contactlinks > a > img
+{
+    width : 100%;
+    height : 100%;
+    opacity : 0.9;
+}
+
+.arrows
+{
+    z-index : 3;
+    display : flex;
+    justify-content : space-between;
+    position : absolute;
+    top : 0%;
+    padding-top : 20%;
+    width : 100%;
+    height : auto;
+    opacity : 0.9;
+}
+.arrows > button > img
+{
+    min-height : 50px;
+    max-height : 150px;
+    width : 6vw;
+    min-width : 50px;
+    /*padding : 30px;*/
+}
+
+.previousone 
+{
+    transform: scaleX(-1);
+    background-color : transparent;
+}
+
+.nextone {
+    background-color: transparent;
+}
+
+.form, .form > form
+{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-around;
+    align-items : center;
+    width : 100%;
+    height : 100%;
+}
+
+input, textarea {
+    font-family : 'Segoe UI',sans-serif;
+    font-size : 18px;
+    padding: 5px;
+    margin: 15px;
+    border: 0px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    background-color: rgb(20, 20, 20);
+    border-radius: 1px;
+    min-width: 300px;
+    width: 50%;
+    color: rgb(230,230,230);
+    text-align: justify;
+}
+
+textarea 
+{
+    resize: vertical;
+    overflow: auto;
+}
+
+button 
+{
+    display : flex;
+    width: auto;
+    height: auto;
+    border : 0px;
+    border-radius : 10px;
+}
+
+#contactform
+{
+    margin-bottom : 5%;
+}
+
+.buttonsubmit
+{
+    background-color: rgb(37, 149, 191); 
+}
+
+#showcase
+{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-around;
+}
+.sketchfab-embed-wrapper
+{
+    display : flex;
+    justify-content : space-evenly;
+    flex-wrap : wrap;
+}
+iframe {
+    min-width: 480px;
+    width: 640px;
+    height: 360px;
+    border-radius: 15px;
+    margin : 50px;
+}
+
+.menu {
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: -25vw;
+    top: 0%;
+    background-color: rgba(230,230,230,0.2);
+    height: 100vh;
+    min-width : 150px;
+    width: 10vw;
+    padding: 1vw;
+}
+
+.menu.menuTranslate {
+    transition: 0.5s;
+    right: 0vw !important;
+}
+
+    .menu.backTranslate {
+        transition: 0.5s;
+        right: -25vw !important;
+    }
+
+.menu > ul
+{
+    display : flex;
+    flex-direction : column;
+    align-items : flex-start;
+    justify-content : space-between;
+    width : auto;
+    height : 50vh;
+    padding-right : 3vw;
+}
+
+.menu > ul > li:hover
+{
+   text-decoration : underline;
+}
+
+.menubutton {
+    z-index : 5;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    margin: 3vw;
+    width: 5vw;
+    min-width: 75px;
+    height: 5vw;
+    min-height: 75px;
+    background-color: rgba(230,230,230,0.5);
+    background-size: 0vw 0vh;
+    transition: all ease-in-out 0.5s;
+}
+
+/*.menubutton:active
+{
+    animation : menu ease-in-out 1s;
+}*/
+
+@keyframes menu {
+    0%{
+        right : -10vw;
+    }
+    100%
+    {
+        right : 0vw;
+    }
+}
+
+.menubutton > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width : 50px;
+        min-height : 50px;
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .menubutton > ul > li {
+        width: 100%;
+        height: 20%;
+        border-radius: 25px;
+        background-color: rgba(230,230,230,0.8);
+    }
